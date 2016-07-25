@@ -43,6 +43,9 @@ BOARD_USES_TINY_ALSA_AUDIO := true
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
+# inherit from common cvtlp-common
+-include device/asus/ctp-common/BoardConfigCommon.mk
+
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/asus/Z00D/bluetooth
